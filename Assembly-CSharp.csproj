@@ -55,15 +55,20 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\Camera Scripts\CameraFollow.cs" />
      <Compile Include="Assets\Scripts\Camera Scripts\PauseMenu.cs" />
+     <Compile Include="Assets\Scripts\Data\LoadData.cs" />
      <Compile Include="Assets\Scripts\Enemy Scripts\Frog Scripts\Move.cs" />
      <Compile Include="Assets\Scripts\MenuScripts\MainMenu.cs" />
      <Compile Include="Assets\Scripts\Obstacles\Spikes.cs" />
      <Compile Include="Assets\Scripts\PlatformScripts\Door.cs" />
      <Compile Include="Assets\Scripts\PlatformScripts\FallingPlatform.cs" />
      <Compile Include="Assets\Scripts\PlatformScripts\MovePlatformScript.cs" />
+     <Compile Include="Assets\Scripts\PlatformScripts\Trap.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\DataUnit.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\EarnItems.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\EnemyHit.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\GameData.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerControl.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\ShadowEffect.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\Status.cs" />
      <Compile Include="Assets\Scripts\Settings\Settings.cs" />
      <Compile Include="Assets\Scripts\TestScript.cs" />
@@ -71,6 +76,7 @@
      <Compile Include="Assets\Scripts\UI\PauseMenuUI.cs" />
      <Compile Include="Assets\Scripts\UI\ShowHPUI.cs" />
      <Compile Include="Assets\Scripts\UI\ShowScoresUI.cs" />
+     <None Include="Assets\JsonDotNet\link.xml" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>F:/UnityProjects/MyFirstProjectGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
@@ -304,6 +310,9 @@
  </Reference>
  <Reference Include="UnityStore">
  <HintPath>F:/UnityProjects/MyFirstProjectGame/Library/PackageCache/com.unity.xiaomi@1.0.3/UnityStore.dll</HintPath>
+ </Reference>
+ <Reference Include="Newtonsoft.Json">
+ <HintPath>F:/UnityProjects/MyFirstProjectGame/Assets/JsonDotNet/Assemblies/Standalone/Newtonsoft.Json.dll</HintPath>
  </Reference>
  <Reference Include="netstandard">
  <HintPath>E:/App/unityData/2018.4.16f1/Editor/Data/NetStandard/ref/2.0.0/netstandard.dll</HintPath>

@@ -32,7 +32,6 @@ public class EnemyHit : MonoBehaviour
     
     private void OnCollisionStay2D(Collision2D other) {
         if(other.gameObject.CompareTag("Enemy")){
-            pControl.KnockBack();
             status.damaged(2);
         }
     }

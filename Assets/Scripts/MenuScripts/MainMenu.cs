@@ -1,12 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
 
     public void PlayGame(){
-        Application.LoadLevel("GamePlay");
+        SceneManager.LoadScene("LoadData");
     }
 
     public void Settings(){
@@ -14,7 +15,7 @@ public class MainMenu : MonoBehaviour
     }
 
     public void Exit(){
-        Debug.Log("It's exit");
+        Application.Quit();
     }
 
     // Start is called before the first frame update

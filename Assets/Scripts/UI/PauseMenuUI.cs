@@ -26,7 +26,6 @@ public class PauseMenuUI : MonoBehaviour
     }
 
     public void Restart(){
-        
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         pMenu.paused = false;
     }

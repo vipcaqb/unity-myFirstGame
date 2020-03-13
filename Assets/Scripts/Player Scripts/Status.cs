@@ -11,12 +11,11 @@ public class Status : MonoBehaviour
     [SerializeField]
     public int scores = 0;
     public int currentHP;
-    int maxHP= 10;
+    public int maxHP= 1000;
     float minTimeGetDamage = 0.2f;
     
 
     bool canGetDamage = true;
-    
     
     private void Awake() {
         currentHP = maxHP;
@@ -24,6 +23,7 @@ public class Status : MonoBehaviour
     }
 
     void Start(){
+        LoadData();
         enemyHit = gameObject.GetComponent<EnemyHit>();
     }
 
@@ -40,6 +40,11 @@ public class Status : MonoBehaviour
             canGetDamage = true;
             enemyHit.damaged = false;
         }
+
+        if(Input.GetKeyDown(KeyCode.S)){
+            GameData.dataUnit.Save(this);
+            Debug.Log("Saved");
+        }
     }
 
     public int GetCurrentHP(){
@@ -54,4 +59,11 @@ public class Status : MonoBehaviour
             enemyHit.damaged = true;
         }
     }
+
+    void LoadData(){
+        currentHP = GameData.dataUnit.currentHP;
+        scores = GameData.dataUnit.scores;
+    }
+
+    
 }

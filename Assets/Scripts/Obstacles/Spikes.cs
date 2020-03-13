@@ -24,7 +24,7 @@ public class Spikes : MonoBehaviour
     }
 
     private void OnTriggerEnter2D(Collider2D other) {
-        if(other.gameObject.name == "Player"){
+        if(other.gameObject.name == "Player" && !other.isTrigger){
             pMenuUI.Restart();
         }
     }
